@@ -1,6 +1,7 @@
 -- app/Main.hs
 module Main where
 
+-- import module
 import Lib (sum')
 
 main :: IO ()
