@@ -2,7 +2,11 @@
 module Main where
 
 -- import module
-import Lib (sum')
+import Lib (sum',mul, sub , divd)
 
 main :: IO ()
-main = print (sum' 20 30)
+main = do
+    sum' 20 30
+    sub 6 2     
+    mul  10 3
+    divd 6 3
