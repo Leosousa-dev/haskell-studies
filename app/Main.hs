@@ -1,12 +1,10 @@
 module Main where
 
 main :: IO ()
-main = putStrLn (wrapHtml "hello world")
+main = putStrLn "hello world"
 
 
+title_ :: String -> String
+title_  content  = "<title>" <> content <> "</title>"
 
-wrapHtml :: String -> String
-wrapHtml content =  "<html><body>" <> content <> "</body></html>"
 
-myhtml :: String
-myhtml = wrapHtml "hello world"
