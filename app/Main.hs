@@ -1,7 +1,7 @@
 module Main where
 
 main :: IO ()
-main = putStrLn body_
+main = putStrLn "hello"
 
 
 title_ :: String -> String
@@ -13,6 +13,10 @@ html_ = el "html"
 body_ :: String -> String
 body_ = el "body"
 
-el :: String -> String -> String
-el tag content =
+
+-- lambda functions
+
+el :: String -> (String -> String)
+el = \tag -> \content -> 
     "<" <> tag <> ">" <> content <> "</" <> tag <> ">"
+   
