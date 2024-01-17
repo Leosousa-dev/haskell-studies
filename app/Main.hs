@@ -1,7 +1,7 @@
 module Main where
 
 main :: IO ()
-main = putStrLn "hello"
+main = putStrLn( title_ "hello world in haskell")
 
 
 title_ :: String -> String
