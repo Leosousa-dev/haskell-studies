@@ -1,22 +1,13 @@
+
 module Main where
 
 main :: IO ()
-main = putStrLn( title_ "hello world in haskell")
+main =  print (lengthStr "leonard hello ")
 
 
-title_ :: String -> String
-title_  content  = "<title>" <> content <> "</title>"
-
-html_ :: String -> String
-html_ = el "html"
-
-body_ :: String -> String
-body_ = el "body"
+lengthStr :: String -> Int
+lengthStr str = length str
 
 
--- lambda functions
-
-el :: String -> (String -> String)
-el = \tag -> \content -> 
-    "<" <> tag <> ">" <> content <> "</" <> tag <> ">"
-   
+getSubString :: Int -> Int -> String -> String
+getSubString initial end str = take (end - initial + 1) (drop initial str)
