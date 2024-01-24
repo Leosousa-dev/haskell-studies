@@ -1,9 +1,9 @@
 
 module Main where
 
-import StrModule.Functions (getSubString, doubleChars)
+import StrModule.Functions (getSubString, doubleChars, printchar)
 
 main :: IO ()
-main =  print $ getSubString 0 8 "hello haskell"
+main =  printchar "hello world"
 
 

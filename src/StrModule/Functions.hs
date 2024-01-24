@@ -1,4 +1,4 @@
-module StrModule.Functions (getSubString, doubleChars) where
+module StrModule.Functions (getSubString, doubleChars, printchar) where
 
 
     getSubString :: Int -> Int -> String -> String
