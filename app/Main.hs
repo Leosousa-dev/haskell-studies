@@ -1,13 +1,8 @@
 
 module Main where
 
+import StrModule.Functions (getSubString)
+
 main :: IO ()
-main =  print (lengthStr "leonard hello ")
+main =  print $ getSubString 0 8 "hello world in haskell!"
 
-
-lengthStr :: String -> Int
-lengthStr str = length str
-
-
-getSubString :: Int -> Int -> String -> String
-getSubString initial end str = take (end - initial + 1) (drop initial str)
