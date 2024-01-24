@@ -7,3 +7,6 @@ module StrModule.Functions (getSubString, doubleChars) where
 
     doubleChars :: String -> String
     doubleChars = concatMap (\c -> [c, c])
+
+    printchar :: String -> IO ()
+    printchar = mapM_ (\c -> putStrLn [c])
