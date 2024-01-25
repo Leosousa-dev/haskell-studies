@@ -1,4 +1,4 @@
-module StrModule.Functions (getSubString, doubleChars, printchar) where
+module StrModule.Functions (getSubString, doubleChars, printchar, strTake, strWords) where
 
 
     getSubString :: Int -> Int -> String -> String
@@ -8,5 +8,11 @@ module StrModule.Functions (getSubString, doubleChars, printchar) where
     doubleChars :: String -> String
     doubleChars = concatMap (\c -> [c, c])
 
+    strTake :: Int -> String -> String
+    strTake = take
+
     printchar :: String -> IO ()
     printchar = mapM_ (\c -> putStrLn [c])
+
+    strWords :: String -> [String]
+    strWords = words
