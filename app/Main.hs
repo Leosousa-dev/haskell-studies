@@ -1,9 +1,9 @@
 
 module Main where
 
-import StrModule.Functions (strLines)
+import StrModule.Functions (strSplit)
 
 
 main :: IO ()
 main = do
-    print(strLines "# this is heading \n this simple plain text here")
+    print(strSplit " " "# heading here")

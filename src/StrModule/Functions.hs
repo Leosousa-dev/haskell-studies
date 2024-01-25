@@ -2,10 +2,12 @@ module StrModule.Functions (
             getSubString,
             doubleChars,
             printchar,
-            strTake, 
+            strTake,
             strWords,
-            strLines
+            strLines,
+            strSplit
         ) where
+    import Data.List.Split
 
 
     getSubString :: Int -> Int -> String -> String
@@ -26,3 +28,6 @@ module StrModule.Functions (
 
     strLines :: String -> [String]
     strLines = lines
+
+    strSplit :: String -> String -> [String]
+    strSplit = splitOn
