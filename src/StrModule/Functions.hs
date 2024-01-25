@@ -1,4 +1,11 @@
-module StrModule.Functions (getSubString, doubleChars, printchar, strTake, strWords) where
+module StrModule.Functions (
+            getSubString,
+            doubleChars,
+            printchar,
+            strTake, 
+            strWords,
+            strLines
+        ) where
 
 
     getSubString :: Int -> Int -> String -> String
@@ -16,3 +23,6 @@ module StrModule.Functions (getSubString, doubleChars, printchar, strTake, strWo
 
     strWords :: String -> [String]
     strWords = words
+
+    strLines :: String -> [String]
+    strLines = lines

@@ -1,10 +1,9 @@
 
 module Main where
 
-import StrModule.Functions (strWords, printchar)
+import StrModule.Functions (strLines)
+
 
 main :: IO ()
 main = do
-    print ( strWords "hello word")
-    printchar "\nhello haskell"
-
+    print(strLines "# this is heading \n this simple plain text here")
