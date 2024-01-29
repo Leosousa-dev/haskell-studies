@@ -2,9 +2,9 @@
 module Main where
 
 -- import StrModule.Functions (strSplit)
-import Lambda.Functions (sumLamb, concaStr)
+import Lambda.Functions (biggerNum)
 
 main :: IO ()
 main = do 
     -- print(sumLamb 4 9)
-    print(concaStr "hello " "haskell")
+    print $ biggerNum 30 10
