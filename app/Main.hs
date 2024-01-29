@@ -1,9 +1,9 @@
 
 module Main where
 
-import StrModule.Functions (strSplit)
-
+-- import StrModule.Functions (strSplit)
+import Lambda.Functions (sumLamb)
 
 main :: IO ()
-main = do
-    print(strSplit "\n" "# heading here\n and it is paragraph")
+main = do 
+    print(sumLamb 4 9)
