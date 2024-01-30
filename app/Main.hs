@@ -1,10 +1,10 @@
 
 module Main where
 
--- import StrModule.Functions (strSplit)
-import Lambda.Functions (biggerNum)
+-- import Lambda.Functions (biggerNum)
+import ControlStructure.Control (oddOrEven)
 
 main :: IO ()
 main = do 
     -- print(sumLamb 4 9)
-    print $ biggerNum 30 10
+    print $ oddOrEven 31

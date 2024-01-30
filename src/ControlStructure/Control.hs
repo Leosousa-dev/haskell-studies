@@ -1,4 +1,4 @@
-module ControlStructure.Control () where
+module ControlStructure.Control (oddOrEven) where
 
 
     --if then else
