@@ -1,4 +1,4 @@
-module ControlStructure.Control (oddOrEven , checkvalue) where
+module ControlStructure.Control (oddOrEven , checkvalue , messageDayWeek) where
 
 
     -- if then else
